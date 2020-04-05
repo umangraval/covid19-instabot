@@ -7,6 +7,5 @@ instabot
 urllib3
 descartes
 glob2
-shutil
 python-firebase
 bs4

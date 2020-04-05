@@ -71,7 +71,7 @@ if __name__ == "__main__":
         cx.append(json.loads(points_file.region_shape_attributes[i])['cx'])
         cy.append(json.loads(points_file.region_shape_attributes[i])['cy'])
 
-    os.replace("./NEW 2.png", "./Posts/NEW 2.png")
+    os.rename("./NEW 2.png", "./Posts/NEW 2.png")
     back = Image.open('./Posts/NEW 2.png')
     draw = ImageDraw.Draw(back)
     font = ImageFont.truetype("Fonts/Rajdhani-Bold.ttf", 27)
@@ -95,6 +95,6 @@ if __name__ == "__main__":
     for lan in lang:
         back = back.convert("RGB")
         back.save('./Posts/'+lan+'.jpg')
-    os.replace("./Posts/NEW 2.png", "./NEW 2.png")
+    os.rename("./Posts/NEW 2.png", "./NEW 2.png")
 
     print('Image Generated')
