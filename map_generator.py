@@ -91,7 +91,7 @@ if __name__ == "__main__":
         draw.text((cx[i]+115, cy[i]), str(w[j]), font=font, fill = 'red')
         j+=1
 
-    lang = ['english', 'tamil', 'telugu', 'bengali', 'malayalam']
+    lang = ['english', 'tamil', 'telugu', 'bengali', 'malayalam', 'gujarati', 'kannada', 'hindi']
     for lan in lang:
         back = back.convert("RGB")
         back.save('./Posts/'+lan+'.jpg')
