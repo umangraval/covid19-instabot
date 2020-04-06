@@ -22,11 +22,17 @@ hashtag_ta = ' '.join(random.sample(allhashtags.split(" "), 30))
 hashtag_te = ' '.join(random.sample(allhashtags.split(" "), 30))
 hashtag_bn = ' '.join(random.sample(allhashtags.split(" "), 30))
 hashtag_mn = ' '.join(random.sample(allhashtags.split(" "), 30))
+hashtag_gu = ' '.join(random.sample(allhashtags.split(" "), 30))
+hashtag_ka = ' '.join(random.sample(allhashtags.split(" "), 30))
+hashtag_hi = ' '.join(random.sample(allhashtags.split(" "), 30))
 print("en: "+hashtag_en)
 print("ta: "+hashtag_ta)
 print("te: "+hashtag_te)
 print("bn: "+hashtag_bn)
 print("mn: "+hashtag_mn)
+print("ka: "+hashtag_ka)
+print("hi: "+hashtag_hi)
+print("gu: "+hashtag_gu)
 
 # URL_en = "http://best-hashtags.com/hashtag/coronavirus/"
 # URL_tn = "http://best-hashtags.com/hashtag/tamil/"
@@ -71,7 +77,10 @@ accounts = {
     'covid.ai_bengali': 'পাওয়া সর্বশেষ পরিসংখ্যান এর covid19 চালু @covid.ai_bengali @covid.ai। বজায় রাখা সামাজিক দুরত্ব এবং থাকা আলাদা। উৎস : covid19india.org\nপরিসংখ্যান ভিতরে ভারত'+stats+hashtag_bn,
     'covid.ai_tamil': 'பெறு சமீபத்திய புள்ளிவிவரங்கள் இன் covid19 மீது @covid.ai_tamil @covid.ai. பராமரிக்கவும் சமூக இடைவெளியும் மற்றும் தங்க தனிமைப்படுத்தப்பட்ட. மூல : covid19india.org\nபுள்ளியியல் இல் இந்தியா'+stats+hashtag_ta,
     'covid.ai_malayalam': '@covid.ai_malayalam @covid.ai- ൽ covid19- ന്റെ ഏറ്റവും പുതിയ സ്ഥിതിവിവരക്കണക്കുകൾ നേടുക. സാമൂഹിക അകലം പാലിക്കുക. ഉറവിടം: covid19india.org\nഇന്ത്യയിലെ സ്ഥിതിവിവരക്കണക്കുകൾ'+stats+hashtag_mn,
-    'covid.ai': 'Get latest stats of covid19 on @covid.ai. Maintain social distancing and stay quarantined.\nSource : covid19india.org\nStatistics in India'+stats+hashtag_en
+    'covid.ai': 'Get latest stats of covid19 on @covid.ai. Maintain social distancing and stay quarantined.\nSource : covid19india.org\nStatistics in India'+stats+hashtag_en,
+    'covid.ai_hindi': '@covid.ai @covid.ai_hindi पर covid19 के नवीनतम आँकड़े प्राप्त करें। सामाजिक दूरी बनाए रखें और संगरोध रहें। \nस्रोत: covid19india.org\n'+stats+hashtag_hi
+    'covid.ai_gujarati': '@covid.ai @covid.ai_gujarati પર નવીનતમ આંકડા મેળવો. સામાજિક અંતર જાળવવા અને અલગ રહેવું.\nસ્રોત: covid19india.org\nભારતમાં આંકડા'+stats+hashtag_gu
+    'covid.ai_kannada': '@covid.ai @covid.ai_kannada ನಲ್ಲಿ  covid19 ನ ಇತ್ತೀಚಿನ ಅಂಕಿಅಂಶಗಳನ್ನು ಪಡೆಯಿರಿ. ಸಾಮಾಜಿಕ ದೂರವನ್ನು ಕಾಪಾಡಿಕೊಳ್ಳಿ ಮತ್ತು ಪ್ರತ್ಯೇಕವಾಗಿರಿ.\nಮೂಲ: covid19india.org\nಭಾರತದಲ್ಲಿ ಅಂಕಿಅಂಶಗಳು'+stats+hashtag_ka
     }
 
 def upload_photo(username):
