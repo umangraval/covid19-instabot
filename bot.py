@@ -85,6 +85,12 @@ def upload_photo(username):
 
 # Task scheduling
 os.system("python map_generator.py")
+upload_photo("covid.ai_gujarati")
+time.sleep(5)
+upload_photo("covid.ai_hindi")
+time.sleep(5)
+upload_photo("covid.ai_kannada")
+time.sleep(5)
 upload_photo("covid.ai")
 time.sleep(5)
 upload_photo("covid.ai_malayalam")
