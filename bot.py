@@ -25,6 +25,8 @@ hashtag_mn = ' '.join(random.sample(allhashtags.split(" "), 30))
 hashtag_gu = ' '.join(random.sample(allhashtags.split(" "), 30))
 hashtag_ka = ' '.join(random.sample(allhashtags.split(" "), 30))
 hashtag_hi = ' '.join(random.sample(allhashtags.split(" "), 30))
+hashtag_ma = ' '.join(random.sample(allhashtags.split(" "), 30))
+
 print("en: "+hashtag_en)
 print("ta: "+hashtag_ta)
 print("te: "+hashtag_te)
@@ -33,6 +35,7 @@ print("mn: "+hashtag_mn)
 print("ka: "+hashtag_ka)
 print("hi: "+hashtag_hi)
 print("gu: "+hashtag_gu)
+print("gu: "+hashtag_ma)
 
 # URL_en = "http://best-hashtags.com/hashtag/coronavirus/"
 # URL_tn = "http://best-hashtags.com/hashtag/tamil/"
@@ -80,7 +83,8 @@ accounts = {
     'covid.ai': 'Get latest stats of covid19 on @covid.ai. Maintain social distancing and stay quarantined.\nSource : covid19india.org\nStatistics in India'+stats+hashtag_en,
     'covid.ai_hindi': '@covid.ai @covid.ai_hindi पर covid19 के नवीनतम आँकड़े प्राप्त करें। सामाजिक दूरी बनाए रखें और संगरोध रहें। \nस्रोत: covid19india.org\n'+stats+hashtag_hi,
     'covid.ai_gujarati': '@covid.ai @covid.ai_gujarati પર નવીનતમ આંકડા મેળવો. સામાજિક અંતર જાળવવા અને અલગ રહેવું.\nસ્રોત: covid19india.org\nભારતમાં આંકડા'+stats+hashtag_gu,
-    'covid.ai_kannada': '@covid.ai @covid.ai_kannada ನಲ್ಲಿ  covid19 ನ ಇತ್ತೀಚಿನ ಅಂಕಿಅಂಶಗಳನ್ನು ಪಡೆಯಿರಿ. ಸಾಮಾಜಿಕ ದೂರವನ್ನು ಕಾಪಾಡಿಕೊಳ್ಳಿ ಮತ್ತು ಪ್ರತ್ಯೇಕವಾಗಿರಿ.\nಮೂಲ: covid19india.org\nಭಾರತದಲ್ಲಿ ಅಂಕಿಅಂಶಗಳು'+stats+hashtag_ka
+    'covid.ai_kannada': '@covid.ai @covid.ai_kannada ನಲ್ಲಿ  covid19 ನ ಇತ್ತೀಚಿನ ಅಂಕಿಅಂಶಗಳನ್ನು ಪಡೆಯಿರಿ. ಸಾಮಾಜಿಕ ದೂರವನ್ನು ಕಾಪಾಡಿಕೊಳ್ಳಿ ಮತ್ತು ಪ್ರತ್ಯೇಕವಾಗಿರಿ.\nಮೂಲ: covid19india.org\nಭಾರತದಲ್ಲಿ ಅಂಕಿಅಂಶಗಳು'+stats+hashtag_ka,
+    'covid.ai_marathi': '@covid.ai @covid.ai_marathi वर कोविड 19 ची नवीनतम आकडेवारी मिळवा. सामाजिक अंतर राखणे आणि अलग ठेवणे.\nस्त्रोत: covid19india.org\nभारतातील आकडेवारी'+stats+hashtag_ma
     }
 
 def upload_photo(username):
@@ -94,19 +98,21 @@ def upload_photo(username):
 
 # Task scheduling
 os.system("python map_generator.py")
-upload_photo("covid.ai_gujarati")
-time.sleep(5)
-upload_photo("covid.ai_hindi")
-time.sleep(5)
-upload_photo("covid.ai_kannada")
-time.sleep(5)
-upload_photo("covid.ai")
-time.sleep(5)
+#upload_photo("covid.ai_gujarati")
+#time.sleep(5)
+#upload_photo("covid.ai_hindi")
+#time.sleep(5)
+#upload_photo("covid.ai_kannada")
+#time.sleep(5)
+#upload_photo("covid.ai")
+#time.sleep(5)
 #upload_photo("covid.ai_malayalam")
-time.sleep(5)
+#time.sleep(5)
 #upload_photo("covid.ai_bengali")
-time.sleep(5)
-upload_photo("covid.ai_telugu")
-time.sleep(5)
-upload_photo("covid.ai_tamil")
+#time.sleep(5)
+upload_photo("covid.ai_marathi")
+#time.sleep(5)
+#upload_photo("covid.ai_telugu")
+#time.sleep(5)
+#upload_photo("covid.ai_tamil")
 shutil.rmtree('config')
