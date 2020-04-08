@@ -4,16 +4,16 @@ defaultencoding = 'utf-8'
 if sys.getdefaultencoding() != defaultencoding:
     reload(sys)
     sys.setdefaultencoding(defaultencoding)
-# from instabot import Bot
-# import schedule
-# import time
-# import glob, os
-# import requests, json
-# import shutil
+from instabot import Bot
+import schedule
+import time
+import glob, os
+import requests, json
+import shutil
 import requests
 from bs4 import BeautifulSoup
-# import json
-# import urllib3, random
+import json
+import urllib3, random
 
 # Trending Hashtags
 
