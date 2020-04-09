@@ -56,13 +56,16 @@ accounts = {
     }
 
 def upload_photo(username):
-    bot.login(username=username,password="CoronaCann09")
-    listofimgs = glob.glob("./Posts/*")
-    img_path = listofimgs[0]
-    bot.upload_photo(img_path,caption=accounts[username])
-    to_remove_path = img_path+".REMOVE_ME"
-    os.remove(to_remove_path)
-    bot.logout(username=username,password="CoronaCann09")
+    try:
+        bot.login(username=username,password="CoronaCann09")
+        listofimgs = glob.glob("./Posts/*")
+        img_path = listofimgs[0]
+        bot.upload_photo(img_path,caption=accounts[username])
+        to_remove_path = img_path+".REMOVE_ME"
+        os.remove(to_remove_path)
+        bot.logout(username=username,password="CoronaCann09")
+    except:
+        print('Error')
 
 # Task scheduling
 os.system("python map_generator.py")
@@ -80,7 +83,7 @@ upload_photo("covid.ai_bengali")
 time.sleep(5)
 upload_photo("covid.ai_marathi")
 time.sleep(5)
-#upload_photo("covid.ai_telugu")
-#time.sleep(5)
+upload_photo("covid.ai_telugu")
+time.sleep(5)
 upload_photo("covid.ai_tamil")
 shutil.rmtree('config')
